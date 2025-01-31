@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body, html {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+
+  ::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem vertical */
+    height: 10px; /* Altura da barra de rolagem horizontal */
+  }
+  
+  /* Estiliza a trilha (fundo da barra de rolagem) */
+  ::-webkit-scrollbar-track {
+    background: #001e4a; /* Cor de fundo */
+    border-radius: 10px; /* Borda arredondada */
+  }
+  
+  /* Estiliza o "thumb" (a parte que se move) */
+  ::-webkit-scrollbar-thumb {
+    background: #05152e; /* Cor da barra */
+    border-radius: 10px; /* Deixa arredondada */
+  }
+  
+  /* Altera a cor do thumb ao passar o mouse */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #05152e; /* Cor ao passar o mouse */
+  }
+}
