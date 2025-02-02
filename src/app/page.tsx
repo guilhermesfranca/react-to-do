@@ -4,6 +4,7 @@ import { useState } from "react";
 import { MdDeleteForever } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
+import "./globals.css";
 
 
 export default function Page() {
@@ -35,11 +36,11 @@ export default function Page() {
     <div className="w-screen min-h-screen flex flex-col text-2xl">
       {/* HEADER fixo no topo */}
       <header className="w-full flex justify-center bg-[#001e4a] bg-opacity-55">
-        <img src="/logo.png" className="w-56 h-auto" />
+        <img src="/assets/logo.png" className="w-56 h-auto" />
       </header>
 
       {/* CONTEÚDO com background */}
-      <div className="flex flex-col items-center w-full min-h-screen bg-[url('/banner.png')] bg-repeat bg-center">
+      <div className="flex flex-col items-center w-full min-h-screen bg-[url('/assets/banner.png')] bg-repeat bg-center">
         <div className="flex w-full max-w-lg my-3 p-4 rounded-md bg-[#05152e] border-2 border-[#05152e]">
           <input
             type="text"
